@@ -1,0 +1,6 @@
+node_modules
+.env
+
+
+
+mongodb+srv://keysanthapa04:bgbq7eg5k6ilOYDJ@cluster0kishan.npiowcq.mongodb.net/?retryWrites=true&w=majority

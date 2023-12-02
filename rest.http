@@ -1,0 +1,53 @@
+@userApi = http://localhost:8000/api/v1/user
+
+@taskApi = http://localhost:8000/api/v1/task
+GET  http://localhost:8000/
+
+###
+POST {{userApi}}
+Content-Type: application/json
+
+{
+    "fName": "kisan",
+    "lName": "thapa",
+    "phone": "12345",
+    "email": "a@b.com",
+    "password": "12345"
+}
+
+###
+POST {{userApi}}/login
+Content-Type: application/json
+
+{
+    "email": "a@b.com",
+    "password": "12345"
+}
+###
+GET {{userApi}}
+
+
+###
+GET {{taskApi}}
+Authorization:656920c822424115c5696b57
+
+
+
+###
+POST {{taskApi}}
+Authorization: 656919ca95d0b244b211de9a
+Content-Type: application/json
+
+{ 
+    "task": "fwak",
+    "hr": 10
+   
+}
+###
+DELETE  
+Content-Type: application/json
+
+{ 
+    "_id": "6568f363a4fb69a5868a7740"
+   
+}
